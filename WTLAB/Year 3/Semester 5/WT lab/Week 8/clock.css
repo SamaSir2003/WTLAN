@@ -1,0 +1,35 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.clock {
+    font-size: 10rem;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.hour,
+.minute,
+.second {
+    border: solid 0.2rem;
+    padding: 0 2rem
+}
