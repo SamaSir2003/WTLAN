@@ -1,0 +1,36 @@
+<!-- 1.)Login, signup form with image upload and download of size below 5 MB only -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="script.js">
+    </script>
+</head>
+
+<body>
+    <form>
+        <label for="name">Name</label>
+        <input type="text" name="name" placeholder="Name">
+        <br>
+        <label for="pwd">Password</label>
+        <input type="password" name="pwd" placeholder="Password">
+        <br>
+        <label for="cpwd">Confirm Password</label>
+        <input  type="password" name="cpwd" placeholder="Confirm Password">
+        <br>
+        <label for="file">Enter file</label>
+        <input accept="image/*" id="file" type="file" name="file" >
+        <br>
+        <button id="submit" type="submit">Submit</button>
+        <br>
+        <h1 id="status"></h1>
+        <br>
+        <a download id="download" type="">Download image</a>
+    </form>
+</body>
+
+</html>
